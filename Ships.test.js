@@ -17,9 +17,13 @@ test("Creates ships from Gameboard", () => {
   board.placeShip("destroyer", "A1");
   board.placeShip("submarine", "2D", "3D");
   console.debug(board.shipsPls());
+  console.debug(board.receiveAttack("A7"));
   console.debug(board.receiveAttack("A1"));
+  console.debug(board.receiveAttack("2D"));
+  console.debug(board.receiveAttack("3D"));
   // console.debug(board.shipsObjectPls());
-  console.debug(board.shipsPls());
+  // console.debug(board.shipsPls());
+  // console.debug(board.shipsObjectPls());
   // console.debug(board.receiveAttack("2D"));
   // console.debug(board.receiveAttack("A1"));
   // console.debug(board.shipsObjectPls());

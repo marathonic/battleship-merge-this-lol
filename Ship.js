@@ -57,7 +57,7 @@ export function Ship(shipType) {
       // return `${position} added to previouslyHit array`;
     },
     isSunk() {
-      if (previouslyHit.length === originalLength) {
+      if (previouslyHit.length === originalLength || length <= 0) {
         return true;
       } else {
         return false;

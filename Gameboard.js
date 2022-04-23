@@ -43,14 +43,14 @@ export function Gameboard() {
             targetShip.isSunk = true; // <--- this doesn't update. Edit: IT WORKS!!!
             return `${targetShip.getName()} has been sunk`;
           }
-          return `${targetShip.getName()} HP: ${targetShip.getLength()}`;
+          return `${targetShip.getName()} hit, HP: ${targetShip.getLength()}`;
           // if (targetShip.hit(coordinates)) {
           //   // ^ => false on repeat hits, true otherwise
           //   if (ship.isSunk()) return `${ship.getName()} has been sunk`;
           //   return `${ship.getName()} HP: ${ship.getLength()}`;
           // }
         } else {
-          return false; // <-- player hit the water, there's no ships there
+          return "miss"; // CHANGE TO <FALSE> <-- player hit the water, there's no ships there
         }
       } catch (err) {
         return err;
